@@ -3,7 +3,7 @@ type operationDefinitionNode = {
   operation: string,
 };
 
-[@bs.module "apollo-utilities"]
+[@bs.module "@apollo/client/utilities"]
 external getMainDefinition:
   ReasonApolloTypes.documentNodeT => operationDefinitionNode =
   "getMainDefinition";

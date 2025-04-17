@@ -1,7 +1,7 @@
 open ApolloClient;
 
 module JsConsumer = {
-  [@bs.module "react-apollo"] [@react.component]
+  [@bs.module "@apollo/client"] [@react.component]
   external make:
     (~children: generatedApolloClient => React.element) => React.element =
     "ApolloConsumer";

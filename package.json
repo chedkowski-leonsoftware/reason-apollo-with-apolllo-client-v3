@@ -8,7 +8,6 @@
     "type": "git",
     "url": "https://github.com/apollographql/reason-apollo"
   },
-  "peerDependencies": {},
   "keywords": [
     "Reason",
     "Apollo",
@@ -24,18 +23,8 @@
     "reason-react": "^0.7.0"
   },
   "dependencies": {
-    "apollo-cache-inmemory": "^1.6.0",
-    "apollo-client": "^2.6.3",
-    "apollo-link": "^1.2.12",
-    "apollo-link-context": "^1.0.18",
-    "apollo-link-error": "^1.1.11",
-    "apollo-link-http": "^1.5.15",
-    "apollo-link-ws": "^1.0.18",
-    "apollo-upload-client": "9.1.0",
-    "apollo-utilities": "^1.3.2",
+    "@apollo/client": "^3.4.17",
     "graphql": "^14.0.2",
-    "graphql-tag": "^2.10.0",
-    "react-apollo": "^2.5.8",
     "subscriptions-transport-ws": "^0.9.16"
   },
   "lint-staged": {

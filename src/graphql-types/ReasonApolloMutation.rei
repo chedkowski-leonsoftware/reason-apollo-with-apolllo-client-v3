@@ -21,7 +21,7 @@ module Make:
       } =
       "%identity";
 
-    [@bs.module "graphql-tag"] external gql: gql = "default";
+    [@bs.module "@apollo/client"] external gql: gql = "default";
 
     let graphqlMutationAST: queryString;
     type response = mutationResponse(Config.t);
@@ -65,7 +65,7 @@ module Make:
     let convertJsInputToReason: renderPropObjJS => renderPropObj;
 
     module JsMutation: {
-      [@bs.module "react-apollo"] [@react.component]
+      [@bs.module "@apollo/client"] [@react.component]
       external make:
         (
           ~mutation: queryString,

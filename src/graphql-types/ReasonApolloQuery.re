@@ -38,7 +38,7 @@ type renderPropObjJS = {
 };
 
 module Make = (Config: Config) => {
-  [@bs.module "graphql-tag"] external gql: gql = "default";
+  [@bs.module "@apollo/client"] external gql: gql = "default";
 
   type response = queryResponse(Config.t);
 
@@ -113,7 +113,7 @@ module Make = (Config: Config) => {
   };
 
   module JsQuery = {
-    [@bs.module "react-apollo"] [@react.component]
+    [@bs.module "@apollo/client"] [@react.component]
     external make:
       (
         ~query: queryString,

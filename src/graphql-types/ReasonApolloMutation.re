@@ -19,7 +19,7 @@ module Make = (Config: Config) => {
     } =
     "%identity";
 
-  [@bs.module "graphql-tag"] external gql: gql = "default";
+  [@bs.module "@apollo/client"] external gql: gql = "default";
 
   let graphqlMutationAST = gql(. Config.query);
   type response = mutationResponse(Config.t);
@@ -106,7 +106,7 @@ module Make = (Config: Config) => {
   };
 
   module JsMutation = {
-    [@bs.module "react-apollo"] [@react.component]
+    [@bs.module "@apollo/client"] [@react.component]
     external make:
       (
         ~mutation: queryString,

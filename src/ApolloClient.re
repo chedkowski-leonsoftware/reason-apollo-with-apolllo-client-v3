@@ -44,11 +44,11 @@ type apolloClientObjectParam = {
   connectToDevTools: option(bool),
   queryDeduplication: option(bool),
 };
-[@bs.module "apollo-client"] [@bs.new]
+[@bs.module "@apollo/client"] [@bs.new]
 external createApolloClientJS: apolloClientObjectParam => generatedApolloClient =
   "ApolloClient";
 
-[@bs.module "graphql-tag"] external gql: ReasonApolloTypes.gql = "default";
+[@bs.module "@apollo/client"] external gql: ReasonApolloTypes.gql = "default";
 
 // [@bs.obj]
 // external apolloClientObjectParam:

@@ -1,4 +1,4 @@
-[@bs.module "graphql-tag"] external gql: ReasonApolloTypes.gql = "default";
+[@bs.module "@apollo/client"] external gql: ReasonApolloTypes.gql = "default";
 
 let ste = React.string;
 

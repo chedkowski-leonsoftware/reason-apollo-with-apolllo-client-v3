@@ -3,7 +3,7 @@ open! ReasonApolloTypes;
 module Make:
   (Config: ReasonApolloTypes.Config) =>
    {
-    [@bs.module "graphql-tag"] external gql: ReasonApolloTypes.gql = "default";
+    [@bs.module "@apollo/client"] external gql: ReasonApolloTypes.gql = "default";
 
     let graphQLSubscriptionAST: queryString;
 
@@ -27,7 +27,7 @@ module Make:
     let convertJsInputToReason: renderPropObjJS => renderPropObj;
 
     module JsSubscription: {
-      [@bs.module "react-apollo"] [@react.component]
+      [@bs.module "@apollo/client"] [@react.component]
       external make:
         (
           ~subscription: ReasonApolloTypes.queryString,
