@@ -19,7 +19,7 @@ module Make = (Config: Config) => {
     } =
     "%identity";
 
-  [@bs.module "@apollo/client"] external gql: gql = "default";
+  [@bs.module "@apollo/client"] external gql: gql = "gql";
 
   let graphqlMutationAST = gql(. Config.query);
   type response = mutationResponse(Config.t);

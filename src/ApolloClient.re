@@ -48,7 +48,7 @@ type apolloClientObjectParam = {
 external createApolloClientJS: apolloClientObjectParam => generatedApolloClient =
   "ApolloClient";
 
-[@bs.module "@apollo/client"] external gql: ReasonApolloTypes.gql = "default";
+[@bs.module "@apollo/client"] external gql: ReasonApolloTypes.gql = "gql";
 
 // [@bs.obj]
 // external apolloClientObjectParam:

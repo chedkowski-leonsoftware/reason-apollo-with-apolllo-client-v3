@@ -38,7 +38,7 @@ type renderPropObjJS = {
 };
 
 module Make = (Config: Config) => {
-  [@bs.module "@apollo/client"] external gql: gql = "default";
+  [@bs.module "@apollo/client"] external gql: gql = "gql";
 
   type response = queryResponse(Config.t);
 

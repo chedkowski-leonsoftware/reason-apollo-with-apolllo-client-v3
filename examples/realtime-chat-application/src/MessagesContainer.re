@@ -1,4 +1,4 @@
-[@bs.module "@apollo/client"] external gql: ReasonApolloTypes.gql = "default";
+[@bs.module "@apollo/client"] external gql: ReasonApolloTypes.gql = "gql";
 
 module Styles = {
   open Css;

@@ -3,7 +3,7 @@ open! ReasonApolloTypes;
 module Make:
   (Config: ReasonApolloTypes.Config) =>
    {
-    [@bs.module "@apollo/client"] external gql: ReasonApolloTypes.gql = "default";
+    [@bs.module "@apollo/client"] external gql: ReasonApolloTypes.gql = "gql";
 
     let graphQLSubscriptionAST: queryString;
 
